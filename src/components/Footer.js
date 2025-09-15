@@ -4,13 +4,14 @@ import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+  const date = new Date();
+  const year = date.getFullYear();
+
   return (
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3></h3>
+          <h3>Contact Me</h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} Chandhresh</h3>
@@ -24,7 +25,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <AiFillGithub />
+                <AiFillGithub size={25} />
               </a>
             </li>
             <li className="social-icons">
@@ -34,7 +35,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedinIn />
+                <FaLinkedinIn size={25} />
               </a>
             </li>
             <li className="social-icons">
@@ -44,7 +45,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <AiFillInstagram />
+                <AiFillInstagram size={25} />
               </a>
             </li>
           </ul>
